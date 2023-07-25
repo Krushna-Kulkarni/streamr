@@ -6,7 +6,7 @@ const Videos = ({videos}) => {
   return (
     <Stack direction="row" flexWrap="wrap" justifyContent="flex-start" gap={2}>
         {
-            videos.map((item, i)=>(
+            videos.filter((content) => content?.id.hasOwnProperty('videoId' || 'channelId') ).map((item, i)=>(
                 <Box key={i}>
                     {
                         item.id.videoId && <VideoCard video={item} />
