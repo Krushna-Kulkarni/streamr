@@ -3,7 +3,7 @@ import { CheckCircle } from "@mui/icons-material"
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 
 
-import { demoChannelTitle, demoChannelUrl, demoThumbnailUrl, demoVideoTitle, demoVideoUrl } from "../utils/constants"
+import { demoChannelTitle, demoChannelUrl, demoVideoTitle, demoVideoUrl } from "../utils/constants"
 
 
 const VideoCard = ({video: {id:{videoId}, snippet}}) => {
@@ -22,7 +22,7 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
         >
           <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
             <Typography
-             variet="subtitle1" 
+             variant="subtitle1" 
               fontWeight="bold" 
               color="#FFF"
               sx={{ display:'flex', width:'300px',wordBreak: "break-word" }}
@@ -32,7 +32,7 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
           </Link>
           <Link to={snippet?.channelId ?  `channel/${snippet?.channelId}` : demoChannelUrl}>
             <Typography
-             variet="subtitle2" 
+             variant="subtitle2" 
               fontWeight="bold" 
               color="gray"
             >
