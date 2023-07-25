@@ -25,7 +25,7 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
              variant="subtitle1" 
               fontWeight="bold" 
               color="#FFF"
-              sx={{ display:'flex', width:'300px',wordBreak: "break-word" }}
+              sx={{ display:'flex'}}  //width:'300px',wordBreak: "break-word" 
             >
               {snippet?.title || demoVideoTitle}
             </Typography>
