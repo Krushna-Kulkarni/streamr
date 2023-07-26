@@ -10,7 +10,7 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
   
   return (
     <Card sx={{width:{xs:'100%', sm:'358px', md:'320px' }, boxShadow:'none', borderRadius:'0'}}>
-      <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
+      <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
       <CardMedia 
         image={snippet?.thumbnails?.high?.url}
         alt={snippet?.title}
@@ -20,17 +20,17 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
         <CardContent 
         sx={{backgroundColor:"#1e1e1e", width:'326px', height:'106px'}}
         >
-          <Link to={videoId ? `video/${videoId}` : demoVideoUrl}>
+          <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <Typography
              variant="subtitle1" 
               fontWeight="bold" 
               color="#FFF"
-              sx={{ display:'flex'}}  //width:'300px',wordBreak: "break-word" 
+              // sx={{ display:'flex' ,width:'300px',wordBreak: "break-word" }}  
             >
-              {snippet?.title || demoVideoTitle}
+              {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
             </Typography>
           </Link>
-          <Link to={snippet?.channelId ?  `channel/${snippet?.channelId}` : demoChannelUrl}>
+          <Link to={snippet?.channelId ?  `/channel/${snippet?.channelId}` : demoChannelUrl}>
             <Typography
              variant="subtitle2" 
               fontWeight="bold" 
@@ -41,7 +41,6 @@ const VideoCard = ({video: {id:{videoId}, snippet}}) => {
             </Typography>
           </Link>
         </CardContent>
-      
     </Card>
   )
 }
