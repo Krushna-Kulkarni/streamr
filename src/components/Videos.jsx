@@ -1,10 +1,14 @@
+import React from "react";
 import { Stack,Box } from '@mui/material'
-import {VideoCard,ChannelCard} from './'
+
+import { ChannelCard, Loader, VideoCard } from "./";
 
 const Videos = ({videos, direction}) => {
-   if(!videos?.length) return 'Loading...'
+
+    if(!videos?.length) return <Loader />;
+
   return (
-    <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" gap={2}>
+    <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
         {
             videos?.filter((content) => content?.id.hasOwnProperty('channelId')  || content?.id.hasOwnProperty('videoId' )).map((item, i)=>(
                 <Box key={i}>
