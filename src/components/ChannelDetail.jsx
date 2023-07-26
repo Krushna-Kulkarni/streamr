@@ -30,12 +30,13 @@ const [videos, setVideos] = useState([]);
     <Box minHeight="95vh">
       <Box>
         <div style={{
-          background: 'linear-gradient(90deg, rgba(0,238,247,1) 0%, rgba(206,3,184,1) 35%, rgba(0,212,255,1) 100%)',
+          height:'200px',
+          background: 'linear-gradient(294deg, rgba(0,238,247,1) 0%, rgba(28,118,212,1) 35%, rgba(0,212,255,1) 100%)',
           zIndex:10,
         }} 
       
         />
-        <ChannelCard channelDetail={channelDetail}  marginTop='--93px'/>
+        <ChannelCard channelDetail={channelDetail}  marginTop='-140px'/>
       </Box>
       <Box p={2} display='flex'>
         <Box sx={ { mr: { sm:'100px' } } } />

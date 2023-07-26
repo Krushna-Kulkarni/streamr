@@ -26,6 +26,7 @@ const ChannelCard = ({channelDetail,marginTop}) =>(
         flexDirection:'column', 
         justifyContent:'center',
         textAlign:'center', 
+        alignItems: 'center',
         color:'#fff'}}>
           <CardMedia 
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
