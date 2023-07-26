@@ -35,5 +35,6 @@ $ npm start
 
 ## **Demo -**
 
-![streamer-gif](https://github.com/Krushna-Kulkarni/streamr/assets/62604823/6ac057e4-888d-41b3-a132-484369051926)
+![streamr-gif](https://github.com/Krushna-Kulkarni/streamr/assets/62604823/23a31c8b-3afe-4b2e-8ff4-c82222f21458)
+
 
