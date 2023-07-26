@@ -12,7 +12,7 @@ a {
 
 ::-webkit-scrollbar {
   width: 0px;
-  height: 5px;
+  height: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -68,11 +68,6 @@ a {
   }
 }
 
-@media screen and (max-width:800px){
-  .copyright{
-    display:none !important;
-  }
-}
 
 @media screen and (max-width: 600px) {
   .scroll-horizontal {
