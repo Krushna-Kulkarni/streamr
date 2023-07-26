@@ -35,4 +35,5 @@ $ npm start
 
 ## **Demo -**
 
-![streamr Demo gif](https://cdn.loom.com/sessions/thumbnails/0fb90c7877034036a8ffec461ebb2f2c-with-play.gif)
+![streamer-gif](https://github.com/Krushna-Kulkarni/streamr/assets/62604823/6ac057e4-888d-41b3-a132-484369051926)
+
