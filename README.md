@@ -38,9 +38,3 @@ $ npm start
 - React JS
 - React Router v6
 - Material UI5
-
-## **Demo -**
-
-![streamr-gif](https://github.com/Krushna-Kulkarni/streamr/assets/62604823/23a31c8b-3afe-4b2e-8ff4-c82222f21458)
-
-
