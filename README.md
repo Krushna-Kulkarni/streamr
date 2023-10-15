@@ -5,6 +5,12 @@
   A video streaming website.
 </div>
 
+## **Demo**
+See Live Demo Here - https://ytstreamr.netlify.app
+
+![image](https://github.com/Krushna-Kulkarni/streamr/assets/62604823/ba1739c2-aa67-426a-8972-3ed4ec31bc0c)
+
+
 ## **How to install and run locally ?**
 
 ```
